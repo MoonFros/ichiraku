@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ichiraku Ramen Shop | Reservations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <nav class="navbar">
+    <a href="index.html" class="logo">Ichiraku <span>Ramen</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="reservations.html" class="active">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <h1>Reserve a Table</h1>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form class="form-box reveal" action="#" method="post">
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div>
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option>1-2</option>
+            <option>3-4</option>
+            <option>5-8</option>
+            <option>9+</option>
+          </select>
+        </div>
+        <div>
+          <label for="notes">Special Requests</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn">Confirm Reservation</button>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>
