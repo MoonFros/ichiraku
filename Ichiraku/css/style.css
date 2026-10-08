@@ -421,15 +421,27 @@ ul {
     gap: 2.5rem;
   }
 
+  /* Compact header: logo on top, links wrapped in a tidy centred row */
   .navbar {
     flex-direction: column; /* Stack logo and nav links vertically */
-    gap: 1rem;
+    gap: 0.6rem;
+    padding: 0.8rem 1rem; /* Keeps the logo off the screen edge */
+  }
+
+  .logo {
+    font-size: 1.3rem;
   }
 
   .nav-links {
-    gap: 1.2rem;
+    gap: 0.4rem 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding-bottom: 2px;
   }
 
   .hero h1 {
